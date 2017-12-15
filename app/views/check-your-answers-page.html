@@ -57,10 +57,12 @@
             What type of balls can you juggle?
           </dt>
           <dd class="cya-answer">
-            {{ data['waste-types']}}
-            {% for item in data['waste-types'] %}
-            {{item}}
-            {% endfor %}
+            <ul class="list list-bullet">
+              {% for item in data['waste-types'] %}
+                <li>{{item}}</li>
+              {% endfor %}
+            </ul>
+
           </dd>
           <dd class="cya-change">
             <a href="/type-of-balls">
